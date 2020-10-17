@@ -10,6 +10,7 @@ import MapIcon from "../utils/mapIcon";
 import api from "../services/api";
 
 import "../styles/pages/orphanages-map.css";
+import { motion } from "framer-motion";
 
 interface Orphanage {
   id: number;
@@ -33,19 +34,24 @@ const OrphanagesMap: React.FC = () => {
   return (
     <div id="page-map">
       <aside>
-        <header>
-          <img src={mapMarkerImg} alt="Happy" />
+        <motion.div
+          animate={{ x: 0 }}
+          initial={{ x: -300 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+        >
+          <header>
+            <img src={mapMarkerImg} alt="Happy" />
 
-          <h2>Escolha um orfanato no mapa</h2>
-          <p>Muitas crianças estão esperando a sua visita {":)"}</p>
-        </header>
+            <h2>Escolha um orfanato no mapa</h2>
+            <p>Muitas crianças estão esperando a sua visita {":)"}</p>
+          </header>
 
-        <footer>
-          <strong>Osasco</strong>
-          <p>São paulo</p>
-        </footer>
+          <footer>
+            <strong>Osasco</strong>
+            <p>São paulo</p>
+          </footer>
+        </motion.div>
       </aside>
-
       <Map
         center={[-23.5760669, -46.7963186]}
         zoom={15.12}

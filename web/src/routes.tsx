@@ -12,10 +12,9 @@ const Routes: React.FC = () => {
       <Switch>
         <Route path="/" exact component={Ladding} />
         <Route path="/app" component={OrphanagesMap} />
-        
+
         <Route path="/orphanages/create" component={CreateOrphanage} />
         <Route path="/orphanages/:id" component={Orphanage} />
-
       </Switch>
     </BrowserRouter>
   );
