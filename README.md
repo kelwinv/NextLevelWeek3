@@ -17,7 +17,7 @@
 
 <p align="center">
   <kbd>
-    <img width="50%" style="border-radius: 5px" src="./assets/happyvideo.gif" alt="Intro">
+    <img style="border-radius: 5px" src="./assets/happyvideo.gif" alt="Intro">
   </kbd>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <kbd>
